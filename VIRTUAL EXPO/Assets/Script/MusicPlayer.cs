@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class MusicPlayer : MonoBehaviour
 {
-    
-
    public Slider volumeSlider;
    public GameObject ObjectMusic;
 
-   private float musicVolume = 1f;
+    //value from the slider, and it converts to volume level
+   private float musicVolume = 0f;
    private AudioSource AudioSource;
 
 
@@ -19,7 +18,6 @@ public class MusicPlayer : MonoBehaviour
        ObjectMusic = GameObject.FindWithTag("GameMusic");
        AudioSource = ObjectMusic.GetComponent<AudioSource>();
 
-       AudioSource.Play();
        musicVolume = PlayerPrefs.GetFloat("volume");
        AudioSource.volume = musicVolume;
        volumeSlider.value = musicVolume;
@@ -31,7 +29,7 @@ public class MusicPlayer : MonoBehaviour
        PlayerPrefs.SetFloat("volume", musicVolume);
    }
 
-   public void updateVolume( float volume)
+   public void VolumeUpdater( float volume)
    {
        musicVolume = volume;
    }
