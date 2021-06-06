@@ -22814,6 +22814,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339178270}
   m_CullTransparentMesh: 0
+--- !u!1 &1343009399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 61300449912789010, guid: 7ab348e9025375546a622eca087906e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 6502989577366647619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1343009403
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343009399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7285641324128850035, guid: b6793763148fc2e49a4d37150744a623, type: 3}
 --- !u!1 &1344424686
 GameObject:
   m_ObjectHideFlags: 0
@@ -33429,17 +33449,17 @@ PrefabInstance:
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.13
+      value: 14.4
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.3
+      value: 5.88
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -26.11
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
@@ -36579,7 +36599,7 @@ PrefabInstance:
     - target: {fileID: 198831079419857526, guid: 7ab348e9025375546a622eca087906e2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4697316
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 198831079419857526, guid: 7ab348e9025375546a622eca087906e2,
         type: 3}
@@ -36625,6 +36645,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube_Hall1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502989575838708812, guid: 7ab348e9025375546a622eca087906e2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ab348e9025375546a622eca087906e2, type: 3}
