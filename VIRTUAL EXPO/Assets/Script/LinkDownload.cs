@@ -8,7 +8,7 @@ public class LinkDownload : MonoBehaviour
     public void Download1()
 	{
 		#if !UNITY_EDITOR
-		openWindow(" ");
+		openWindow("https://drive.google.com/uc?export=download&id=102CpZKLH7N5crwFitjcmTZdHfGJQrtRb");
 		#endif
 	}
 
@@ -57,28 +57,28 @@ public class LinkDownload : MonoBehaviour
        public void Download8()
 	{
 		#if !UNITY_EDITOR
-		openWindow("https://drive.google.com/uc?export=download&id=1rAM5-NNkEBHxS8kzqxbSMU9bDVY8jzIg");
+		openWindow("https://drive.google.com/uc?export=download&id=1W6ilaZTyZeQd0fVD0GPSI8DgsDMjw5Ny");
 		#endif
 	}
 
        public void Download9()
 	{
 		#if !UNITY_EDITOR
-		openWindow(" ");
+		openWindow("https://drive.google.com/uc?export=download&id=1wRJIn6qLxwCI8kwnsX7Y1XiMzN2Pw2Qs");
 		#endif
 	}
 
        public void Download10()
 	{
 		#if !UNITY_EDITOR
-		openWindow(" ");
+		openWindow("https://drive.google.com/uc?export=download&id=1dssUsPoCbRYtpVx9Ve8lIYfuBtTuhlAk");
 		#endif
 	}
 
        public void Download11()
 	{
 		#if !UNITY_EDITOR
-		openWindow(" ");
+		openWindow("https://drive.google.com/uc?export=download&id=1Jqdwy3tQwhXTnsY8dFeYbuP_z8N_rXUr");
 		#endif
 	}
 
@@ -253,7 +253,7 @@ public class LinkDownload : MonoBehaviour
       public void Download36()
 	{
 		#if !UNITY_EDITOR
-		openWindow("https://drive.google.com/uc?export=download&id=1rAM5-NNkEBHxS8kzqxbSMU9bDVY8jzIg");
+		openWindow("https://drive.google.com/uc?export=download&id=1aVR7o61v3P5b-o_SDlKiDIteAuSFFj5n");
 		#endif
 	}
 
