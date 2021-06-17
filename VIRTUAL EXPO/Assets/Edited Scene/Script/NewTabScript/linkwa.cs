@@ -167,6 +167,62 @@ public class linkwa : MonoBehaviour
 		#endif
 	}
 
+	public void Widia7()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/6281221592235");
+		#endif
+	}
+
+	public void Siska2()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/628112310118");
+		#endif
+	}
+
+public void Parman33()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/6281223922767");
+		#endif
+	}
+
+public void Andrianto38()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/6282178886223");
+		#endif
+	}
+
+public void Hardy39()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/6285321867725");
+		#endif
+	}
+
+public void Martiyadi40()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/6285314030928");
+		#endif
+	}
+
+public void Iwan42()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/6282116902116");
+		#endif
+	}
+
+public void Sony43()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/6281222378349");
+		#endif
+	}
+
 	/*public void Aloysius35()
 	{
 		#if !UNITY_EDITOR

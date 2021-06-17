@@ -168,6 +168,64 @@ public class linkemail : MonoBehaviour
 		#endif
 	}
 
+	public void Siska2()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=siskamarhen@telkomuniversity.ac.id");
+		#endif
+	}
+
+	public void Idola12()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=idolaputri22gmail.com");
+		#endif
+	}
+
+	public void Parman33()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=psukarno@telkomuniversity.ac.id");
+		#endif
+	}
+
+	public void Andrianto38()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=andriantoandri@telkomuniversity.ac.id");
+		#endif
+	}
+
+	public void Hardy39()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hardydil@telkomuniversity.ac.id");
+		#endif
+	}
+
+	public void Martiyadi40()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=martiyadi@telkomuniversity.ac.id");
+		#endif
+	}
+
+	public void Iwan42()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=iwaniwut@telkomuniversity.ac.id");
+		#endif
+	}
+
+	public void Sony43()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sonysumaryo@telkomuniversity.ac.id");
+		#endif
+	}
+
+
+
 	[DllImport("__Internal")]
 	private static extern void openWindow(string url);
 }

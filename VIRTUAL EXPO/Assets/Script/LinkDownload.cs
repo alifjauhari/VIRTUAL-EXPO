@@ -257,6 +257,13 @@ public class LinkDownload : MonoBehaviour
 		#endif
 	}
 
+	public void Download38()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://drive.google.com/uc?export=download&id=1TNlmqN6Rg_4wRjNPrL_95WEwfK0PQ-Qb");
+		#endif
+	}
+
     
 
 	[DllImport("__Internal")]
