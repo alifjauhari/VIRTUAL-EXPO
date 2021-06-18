@@ -1948,7 +1948,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: http://cubestudio.id/VR/video/videoitb.mp4
+  m_Url: https://cubestudio.id/VR/videoppm/1.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
@@ -3024,7 +3024,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: http://cubestudio.id/VR/video/videoitb.mp4
+  m_Url: https://cubestudio.id/VR/videoppm/2.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
@@ -7005,7 +7005,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: http://cubestudio.id/VR/video/videoitb.mp4
+  m_Url: https://cubestudio.id/VR/videoppm/20.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
@@ -8960,8 +8960,8 @@ GameObject:
   - component: {fileID: 371263057}
   - component: {fileID: 371263056}
   - component: {fileID: 371263055}
-  - component: {fileID: 371263054}
   - component: {fileID: 371263053}
+  - component: {fileID: 371263054}
   m_Layer: 0
   m_Name: LCD Back_Trigger
   m_TagString: Untagged
@@ -8992,7 +8992,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 371263051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
+  m_Script: {fileID: 11500000, guid: e38676cbab393ad4ca6fd4e8e548f63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &371263054
@@ -9029,7 +9029,18 @@ MonoBehaviour:
       m_Calls: []
   onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 371263053}
+        m_MethodName: Link2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onExit:
     m_PersistentCalls:
       m_Calls:
@@ -9750,6 +9761,7 @@ GameObject:
   - component: {fileID: 408506904}
   - component: {fileID: 408506903}
   - component: {fileID: 408506902}
+  - component: {fileID: 408506905}
   - component: {fileID: 408506901}
   - component: {fileID: 408506900}
   m_Layer: 0
@@ -9819,7 +9831,18 @@ MonoBehaviour:
       m_Calls: []
   onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 408506905}
+        m_MethodName: Link20
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onExit:
     m_PersistentCalls:
       m_Calls:
@@ -9903,6 +9926,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408506898}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &408506905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408506898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e38676cbab393ad4ca6fd4e8e548f63c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &411265511
 GameObject:
   m_ObjectHideFlags: 0
@@ -11355,7 +11390,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: http://cubestudio.id/VR/video/videoitb.mp4
+  m_Url: https://cubestudio.id/VR/videoppm/17.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
@@ -30293,8 +30328,8 @@ GameObject:
   - component: {fileID: 1286772827}
   - component: {fileID: 1286772826}
   - component: {fileID: 1286772825}
-  - component: {fileID: 1286772824}
   - component: {fileID: 1286772828}
+  - component: {fileID: 1286772824}
   m_Layer: 0
   m_Name: LCD Back_Trigger
   m_TagString: Untagged
@@ -30350,7 +30385,18 @@ MonoBehaviour:
       m_Calls: []
   onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286772828}
+        m_MethodName: Link17
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onExit:
     m_PersistentCalls:
       m_Calls:
@@ -30443,7 +30489,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1286772822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
+  m_Script: {fileID: 11500000, guid: e38676cbab393ad4ca6fd4e8e548f63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1287489078
@@ -38214,7 +38260,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1631276116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
+  m_Script: {fileID: 11500000, guid: e38676cbab393ad4ca6fd4e8e548f63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1631276119
@@ -38251,7 +38297,18 @@ MonoBehaviour:
       m_Calls: []
   onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1631276118}
+        m_MethodName: Link1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onExit:
     m_PersistentCalls:
       m_Calls:

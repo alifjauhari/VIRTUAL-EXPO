@@ -5,40 +5,34 @@ using UnityEngine.UI;
 public class linkITB : MonoBehaviour 
 {
 
-	public void OpenLinkITB()
+	public void Link1()
 	{
 		#if !UNITY_EDITOR
-		openWindow("https://www.youtube.com/watch?v=V4B82wgFc_U");
+		openWindow("https://youtu.be/Win08wPjybE");
 		#endif
 	}
 
-	public void OpenLinkTelkom()
+	public void Link17()
 	{
 		#if !UNITY_EDITOR
-		openWindow("https://www.youtube.com/watch?v=LwAQQJbHLxU&t=6s");
+		openWindow("https://youtu.be/H8lIkgymOak");
 		#endif
 	}
 
-	public void OpenLinkUGM()
+	public void Link2()
 	{
 		#if !UNITY_EDITOR
-		openWindow("https://youtu.be/ueDXnBd7TJo");
+		openWindow("https://youtu.be/cX4x5NfrgpI");
 		#endif
 	}
 
-	public void OpenLinkIPB()
+	public void Link20()
 	{
 		#if !UNITY_EDITOR
-		openWindow("https://youtu.be/_7sKzCYoBws");
+		openWindow("https://youtu.be/XNgUQ-Hyf9I");
 		#endif
 	}
 
-	public void OpenLinkUI()
-	{
-		#if !UNITY_EDITOR
-		openWindow("https://youtu.be/FEgH3UbjffA");
-		#endif
-	}
 
 	[DllImport("__Internal")]
 	private static extern void openWindow(string url);
