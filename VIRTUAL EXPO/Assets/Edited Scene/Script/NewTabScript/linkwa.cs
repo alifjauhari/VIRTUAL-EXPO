@@ -223,6 +223,13 @@ public void Sony43()
 		#endif
 	}
 
+public void Ima41()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/6281224001982");
+		#endif
+	}
+
 	/*public void Aloysius35()
 	{
 		#if !UNITY_EDITOR

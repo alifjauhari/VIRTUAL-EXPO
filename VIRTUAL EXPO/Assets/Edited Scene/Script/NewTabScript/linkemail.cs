@@ -224,6 +224,13 @@ public class linkemail : MonoBehaviour
 		#endif
 	}
 
+	public void Ima41()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=kusmayanti@telkomuniversity.ac.id");
+		#endif
+	}
+
 
 
 	[DllImport("__Internal")]

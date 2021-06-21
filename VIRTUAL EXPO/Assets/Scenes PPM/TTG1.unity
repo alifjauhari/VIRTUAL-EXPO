@@ -5956,24 +5956,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294103423}
   m_CullTransparentMesh: 0
---- !u!1 &299383776 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3836816028504782927, guid: 258345123c833c24299f31a8e1a9c1c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 828884005}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &299383781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299383776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &303876988
 GameObject:
   m_ObjectHideFlags: 0
@@ -5987,7 +5969,6 @@ GameObject:
   - component: {fileID: 303876992}
   - component: {fileID: 303876991}
   - component: {fileID: 303876990}
-  - component: {fileID: 303876994}
   m_Layer: 0
   m_Name: LCD Back
   m_TagString: Untagged
@@ -6102,18 +6083,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303876988}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &303876994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303876988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &308823589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7176,6 +7145,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -257278029260952120, guid: 258345123c833c24299f31a8e1a9c1c3,
         type: 3}
+    - target: {fileID: 3836816028504782927, guid: 258345123c833c24299f31a8e1a9c1c3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3836816028504782927, guid: 258345123c833c24299f31a8e1a9c1c3,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10147,6 +10121,7 @@ GameObject:
   - component: {fileID: 438047386}
   - component: {fileID: 438047385}
   - component: {fileID: 438047384}
+  - component: {fileID: 438047389}
   m_Layer: 0
   m_Name: LCD Back
   m_TagString: Untagged
@@ -10203,7 +10178,18 @@ MonoBehaviour:
       m_Calls: []
   onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 438047389}
+        m_MethodName: Link14
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onExit:
     m_PersistentCalls:
       m_Calls:
@@ -10250,7 +10236,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: http://cubestudio.id/VR/video/videoitb.mp4
+  m_Url: https://cubestudio.id/VR/videoppm/14.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
@@ -10320,6 +10306,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438047382}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &438047389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438047382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e38676cbab393ad4ca6fd4e8e548f63c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &443821088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12411,7 +12409,6 @@ GameObject:
   - component: {fileID: 511030687}
   - component: {fileID: 511030686}
   - component: {fileID: 511030685}
-  - component: {fileID: 511030689}
   m_Layer: 0
   m_Name: LCD Back
   m_TagString: Untagged
@@ -12526,18 +12523,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511030683}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &511030689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511030683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &514767666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3502862931888414433, guid: 961876ab4ec94c84baac1a28df92c857,
@@ -13571,14 +13556,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 556666601}
-  - component: {fileID: 556666602}
   m_Layer: 0
   m_Name: LCD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &556666601
 Transform:
   m_ObjectHideFlags: 0
@@ -13596,18 +13580,6 @@ Transform:
   m_Father: {fileID: 21457353}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &556666602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556666600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &563677262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3502862931888414433, guid: 961876ab4ec94c84baac1a28df92c857,
@@ -15209,7 +15181,6 @@ GameObject:
   - component: {fileID: 620126528}
   - component: {fileID: 620126527}
   - component: {fileID: 620126526}
-  - component: {fileID: 620126525}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -15236,18 +15207,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.5, y: 0.90003}
   m_SizeDelta: {x: 225, y: 225}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &620126525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620126523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &620126526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22099,6 +22058,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -257278029260952120, guid: 258345123c833c24299f31a8e1a9c1c3,
         type: 3}
+    - target: {fileID: 3836816028504782927, guid: 258345123c833c24299f31a8e1a9c1c3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3836816028504782927, guid: 258345123c833c24299f31a8e1a9c1c3,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -32128,24 +32092,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190302355}
   m_CullTransparentMesh: 0
---- !u!1 &1192892381 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3836816028504782927, guid: 258345123c833c24299f31a8e1a9c1c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 338150617}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1192892386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192892381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1195411348
 GameObject:
   m_ObjectHideFlags: 0
@@ -34950,14 +34896,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1291941495}
-  - component: {fileID: 1291941496}
   m_Layer: 0
   m_Name: LCD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1291941495
 Transform:
   m_ObjectHideFlags: 0
@@ -34975,18 +34920,6 @@ Transform:
   m_Father: {fileID: 1232200548}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1291941496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291941494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1295649271
 GameObject:
   m_ObjectHideFlags: 0
@@ -39711,24 +39644,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471837008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1472338503 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1156985948063312, guid: b901940dd073fde4c8b54624e4175137,
-    type: 3}
-  m_PrefabInstance: {fileID: 489454273}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1472338506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472338503}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
@@ -46990,7 +46905,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1768619712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
+  m_Script: {fileID: 11500000, guid: e38676cbab393ad4ca6fd4e8e548f63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1768619715
@@ -47027,7 +46942,18 @@ MonoBehaviour:
       m_Calls: []
   onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1768619714}
+        m_MethodName: Link30
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onExit:
     m_PersistentCalls:
       m_Calls:
@@ -50248,7 +50174,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: http://cubestudio.id/VR/video/videoitb.mp4
+  m_Url: https://cubestudio.id/VR/videoppm/30.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
