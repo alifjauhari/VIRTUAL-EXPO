@@ -231,6 +231,27 @@ public class linkemail : MonoBehaviour
 		#endif
 	}
 
+	public void Azam32()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=azam.zamhuri.fuadi@gmail.com");
+		#endif
+	}
+
+	public void Didit8()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=adytia@telkomuniversity.ac.id");
+		#endif
+	}
+
+	public void Idhar5()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=idharresmadi@telkomuniversity.ac.id");
+		#endif
+	}
+
 
 
 	[DllImport("__Internal")]

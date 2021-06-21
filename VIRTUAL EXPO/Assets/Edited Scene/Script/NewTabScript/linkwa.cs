@@ -230,13 +230,28 @@ public void Ima41()
 		#endif
 	}
 
-	/*public void Aloysius35()
+public void Didit8()
 	{
 		#if !UNITY_EDITOR
-		openWindow("https://wa.me/62856972584");
+		openWindow("https://wa.me/081221226143");
 		#endif
 	}
-	nomor telepon bukan nomor whatsapp*/
+
+public void Idhar5()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/08112226189");
+		#endif
+	}
+
+
+public void Aloysius35()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/08111558521");
+		#endif
+	}
+
 
 	[DllImport("__Internal")]
 	private static extern void openWindow(string url);
