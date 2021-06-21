@@ -2520,18 +2520,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7387706064836869012, guid: ce4535b7548b2604bb624c75f987970a, type: 3}
---- !u!114 &176493327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176493312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &176493328
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2546,18 +2534,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2534964839176971238, guid: ce4535b7548b2604bb624c75f987970a, type: 3}
---- !u!114 &176493329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176493313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &176493330
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10067,6 +10043,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405444041908, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
+      propertyPath: jumpSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506270405444041908, guid: 479e05de9d58af54ca1c2ba414656501,
+        type: 3}
       propertyPath: TargetCamera
       value: 
       objectReference: {fileID: 455464938}
@@ -11713,6 +11694,7 @@ GameObject:
   - component: {fileID: 527846816}
   - component: {fileID: 527846815}
   - component: {fileID: 527846814}
+  - component: {fileID: 527846819}
   m_Layer: 0
   m_Name: LCD Back
   m_TagString: Untagged
@@ -11886,6 +11868,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527846812}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &527846819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527846812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e38676cbab393ad4ca6fd4e8e548f63c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &543938118
 GameObject:
   m_ObjectHideFlags: 0
@@ -15026,6 +15020,7 @@ GameObject:
   - component: {fileID: 666675591}
   - component: {fileID: 666675590}
   - component: {fileID: 666675589}
+  - component: {fileID: 666675594}
   m_Layer: 0
   m_Name: LCD Back
   m_TagString: Untagged
@@ -15082,7 +15077,18 @@ MonoBehaviour:
       m_Calls: []
   onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 666675594}
+        m_MethodName: Link3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onExit:
     m_PersistentCalls:
       m_Calls:
@@ -15129,7 +15135,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: http://cubestudio.id/VR/video/videoitb.mp4
+  m_Url: https://cubestudio.id/VR/videoppm/3.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
@@ -15199,6 +15205,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666675587}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &666675594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666675587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e38676cbab393ad4ca6fd4e8e548f63c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &668443470
 GameObject:
   m_ObjectHideFlags: 0
@@ -21731,6 +21749,7 @@ GameObject:
   - component: {fileID: 915287157}
   - component: {fileID: 915287156}
   - component: {fileID: 915287155}
+  - component: {fileID: 915287160}
   m_Layer: 0
   m_Name: LCD Back
   m_TagString: Untagged
@@ -21904,6 +21923,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915287153}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &915287160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915287153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e38676cbab393ad4ca6fd4e8e548f63c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &922658730 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3896195940839516126, guid: 961876ab4ec94c84baac1a28df92c857,
@@ -30130,6 +30161,7 @@ GameObject:
   - component: {fileID: 1269415156}
   - component: {fileID: 1269415155}
   - component: {fileID: 1269415154}
+  - component: {fileID: 1269415159}
   m_Layer: 0
   m_Name: LCD Back
   m_TagString: Untagged
@@ -30186,7 +30218,18 @@ MonoBehaviour:
       m_Calls: []
   onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1269415159}
+        m_MethodName: Link36
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onExit:
     m_PersistentCalls:
       m_Calls:
@@ -30233,7 +30276,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: http://cubestudio.id/VR/video/videoitb.mp4
+  m_Url: https://cubestudio.id/VR/videoppm/36.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
@@ -30303,6 +30346,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269415152}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1269415159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269415152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e38676cbab393ad4ca6fd4e8e548f63c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1286400943
 GameObject:
   m_ObjectHideFlags: 0
