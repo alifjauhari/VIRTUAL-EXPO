@@ -22572,17 +22572,17 @@ PrefabInstance:
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7765864
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6300107
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
@@ -22597,7 +22597,7 @@ PrefabInstance:
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 281.898
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
@@ -22612,37 +22612,37 @@ PrefabInstance:
     - target: {fileID: 6506270405802385924, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.03795299
+      value: 0.037950996
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405802385924, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.255
+      value: 1.2548951
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405802385924, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0010015804
+      value: -0.0029119104
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405802385924, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.74931234
+      value: 0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405802385924, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405802385924, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6622168
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405802385924, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405802385924, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
@@ -22652,7 +22652,12 @@ PrefabInstance:
     - target: {fileID: 6506270405802385924, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 82.938
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506270405802385924, guid: 479e05de9d58af54ca1c2ba414656501,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405802385925, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
@@ -41754,15 +41759,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936261766}
   m_LocalRotation: {x: -0, y: -0.9999949, z: -0, w: -0.003217732}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.70793, y: 0.70793, z: 0.70793}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5595195, y: 0.5595195, z: 0.5595195}
   m_Children: []
   m_Father: {fileID: 1060323813}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180.36899, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -77, y: 76}
+  m_AnchoredPosition: {x: 127, y: 30}
   m_SizeDelta: {x: 2739.2854, y: 1015.177}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1936261768
@@ -41797,9 +41802,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.77
-  m_Text: 'Ruang
-
-    Teknologi Tepat Guna 2'
+  m_Text: "Ruang\nTeknologi \nTepat Guna 2"
 --- !u!222 &1936261769
 CanvasRenderer:
   m_ObjectHideFlags: 0
