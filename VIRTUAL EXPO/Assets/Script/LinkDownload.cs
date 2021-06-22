@@ -264,6 +264,41 @@ public class LinkDownload : MonoBehaviour
 		#endif
 	}
 
+	public void Download39()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://drive.google.com/uc?export=download&id=1qetRut-aNDv5-r5HS80xVgRgHX8El8BY");
+		#endif
+	}
+
+	public void Download40()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://drive.google.com/uc?export=download&id=195Eb7BWHUDV0HB0dyXZ6NXTqpm6e-p4V");
+		#endif
+	}
+
+	public void Download41()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://drive.google.com/uc?export=download&id=12b28sB30xd4oR3pZCOzKDYZb3t1f7RR8");
+		#endif
+	}
+
+	public void Download42()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://drive.google.com/uc?export=download&id=1WJWKfu79Imw0Q_MM1CF5377_v5urz3aG");
+		#endif
+	}
+
+	public void Download43()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://drive.google.com/uc?export=download&id=1j1CvbVoIrwaTGQqbYR6JUtd-U6iLwjhi");
+		#endif
+	}
+
     
 
 	[DllImport("__Internal")]
