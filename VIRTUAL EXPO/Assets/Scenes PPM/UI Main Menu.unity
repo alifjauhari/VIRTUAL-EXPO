@@ -703,8 +703,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 767.8594, y: 276.23914}
+  m_AnchoredPosition: {x: 0.00036621, y: 0}
+  m_SizeDelta: {x: 934.5625, y: 276.23914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &362662394
 Animator:
@@ -768,75 +768,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1300961021}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1178789543}
+        m_MethodName: LoadSceneByClick
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1536826924}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2055592027}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 166487233}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 78920772}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Iot1
           m_BoolArgument: 0
         m_CallState: 2
   onEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 362662398}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onDown:
     m_PersistentCalls:
       m_Calls: []
@@ -874,7 +819,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3565140701351905779, guid: a69b3be78f244eb4bb53e02e680e16f7,
+  m_Sprite: {fileID: 7306394649980490448, guid: d55e34b7fab4f954cbf06ab0595a76f2,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1479,7 +1424,7 @@ GameObject:
   - component: {fileID: 711875728}
   - component: {fileID: 711875730}
   m_Layer: 5
-  m_Name: Tutorial
+  m_Name: Masuk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1494,7 +1439,7 @@ RectTransform:
   m_GameObject: {fileID: 711875726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.20522, y: 0.20522, z: 0.20522}
   m_Children:
   - {fileID: 362662393}
   m_Father: {fileID: 448996439}
@@ -1502,8 +1447,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -239.1, y: 111.6}
-  m_SizeDelta: {x: 767.8594, y: 276.23914}
+  m_AnchoredPosition: {x: 1.1, y: 81}
+  m_SizeDelta: {x: 934.56226, y: 276.23914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711875728
 MonoBehaviour:
@@ -1524,7 +1469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3565140701351905779, guid: a69b3be78f244eb4bb53e02e680e16f7,
+  m_Sprite: {fileID: 7306394649980490448, guid: d55e34b7fab4f954cbf06ab0595a76f2,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1585,7 +1530,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 711875728}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1178789543}
+        m_MethodName: LoadSceneByClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Iot1
+          m_BoolArgument: 0
+        m_CallState: 2
   onEnter:
     m_PersistentCalls:
       m_Calls:
@@ -2463,7 +2419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b9f521b8d9554494da1ad1c56af8172f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f659725b585d27e4a9d527c9aba77de0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2790,7 +2746,7 @@ GameObject:
   - component: {fileID: 1597578727}
   - component: {fileID: 1597578730}
   m_Layer: 5
-  m_Name: Mulai
+  m_Name: Info Acara
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2813,8 +2769,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 401.7, y: -47.888}
-  m_SizeDelta: {x: 439.77637, y: 595.1792}
+  m_AnchoredPosition: {x: 0.92, y: -96.17}
+  m_SizeDelta: {x: 192.69452, y: 58.09993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1597578727
 MonoBehaviour:
@@ -2835,7 +2791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1356787849577551504, guid: a69b3be78f244eb4bb53e02e680e16f7,
+  m_Sprite: {fileID: -8316357436349718334, guid: d55e34b7fab4f954cbf06ab0595a76f2,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2896,18 +2852,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1597578727}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1178789543}
-        m_MethodName: LoadSceneByClick
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Iot1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onEnter:
     m_PersistentCalls:
       m_Calls:
@@ -3125,6 +3070,7 @@ GameObject:
   - component: {fileID: 1672364013}
   - component: {fileID: 1672364012}
   - component: {fileID: 1672364011}
+  - component: {fileID: 1672364015}
   m_Layer: 5
   m_Name: Animasi Mulai
   m_TagString: Untagged
@@ -3141,15 +3087,15 @@ RectTransform:
   m_GameObject: {fileID: 1672364009}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
+  m_LocalScale: {x: 1.286941, y: 1.286941, z: 1.286941}
   m_Children: []
   m_Father: {fileID: 1597578726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.21, y: -0.99}
-  m_SizeDelta: {x: 439.77637, y: 595.1792}
+  m_AnchoredPosition: {x: 0.000017166, y: -1.03}
+  m_SizeDelta: {x: 207.19843, y: 62.470413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &1672364011
 Animation:
@@ -3204,7 +3150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1356787849577551504, guid: a69b3be78f244eb4bb53e02e680e16f7,
+  m_Sprite: {fileID: -8316357436349718334, guid: d55e34b7fab4f954cbf06ab0595a76f2,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -3223,6 +3169,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672364009}
   m_CullTransparentMesh: 0
+--- !u!114 &1672364015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672364009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ec17c3f7a304f44b2721c7a1f40139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1672364013}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1928795085}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onDown:
+    m_PersistentCalls:
+      m_Calls: []
+  onUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onBeginDrag:
+    m_PersistentCalls:
+      m_Calls: []
+  onDrag:
+    m_PersistentCalls:
+      m_Calls: []
+  onEndDrag:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1712623731
 GameObject:
   m_ObjectHideFlags: 0
@@ -3236,7 +3257,7 @@ GameObject:
   - component: {fileID: 1712623733}
   - component: {fileID: 1712623735}
   m_Layer: 5
-  m_Name: Info Acara
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3251,7 +3272,7 @@ RectTransform:
   m_GameObject: {fileID: 1712623731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.21500295, y: 0.21500295, z: 0.21500295}
   m_Children:
   - {fileID: 1896505234}
   m_Father: {fileID: 448996439}
@@ -3259,8 +3280,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -239.1, y: -206.8}
-  m_SizeDelta: {x: 767.8579, y: 277.3543}
+  m_AnchoredPosition: {x: 1.13, y: -7.32}
+  m_SizeDelta: {x: 886.01697, y: 270.0888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1712623733
 MonoBehaviour:
@@ -3281,7 +3302,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6227885349123626297, guid: a69b3be78f244eb4bb53e02e680e16f7,
+  m_Sprite: {fileID: 2399513130451201850, guid: d55e34b7fab4f954cbf06ab0595a76f2,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -3733,8 +3754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0}
-  m_SizeDelta: {x: 767.8594, y: 276.23914}
+  m_AnchoredPosition: {x: -0.00024796, y: -0}
+  m_SizeDelta: {x: 881.68616, y: 276.23914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1896505235
 Animator:
@@ -3798,7 +3819,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1928795085}
+      - m_Target: {fileID: 1300961021}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -3808,6 +3829,50 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1536826924}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2055592027}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 166487233}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 78920772}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
   onEnter:
     m_PersistentCalls:
@@ -3849,7 +3914,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6227885349123626297, guid: a69b3be78f244eb4bb53e02e680e16f7,
+  m_Sprite: {fileID: 2399513130451201850, guid: d55e34b7fab4f954cbf06ab0595a76f2,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
