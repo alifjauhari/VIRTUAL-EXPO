@@ -252,6 +252,13 @@ public class linkemail : MonoBehaviour
 		#endif
 	}
 
+	public void Runik44()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=runikmachfiroh@telkomuniversity.ac.id");
+		#endif
+	}
+
 
 
 	[DllImport("__Internal")]
