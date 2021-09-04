@@ -252,6 +252,12 @@ public void Aloysius35()
 		#endif
 	}
 
+public void Runik44()
+	{
+		#if !UNITY_EDITOR
+		openWindow("https://wa.me/082214101861");
+		#endif
+	}
 
 	[DllImport("__Internal")]
 	private static extern void openWindow(string url);
