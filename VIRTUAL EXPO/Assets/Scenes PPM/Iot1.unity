@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 3964450}
   - component: {fileID: 3964453}
   - component: {fileID: 3964452}
+  - component: {fileID: 3964451}
   m_Layer: 0
   m_Name: YoutubeAdvanced (4)
   m_TagString: Untagged
@@ -375,6 +376,102 @@ Transform:
   m_Father: {fileID: 2052661465}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 180.045}
+--- !u!82 &3964451
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964449}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!328 &3964452
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -395,14 +492,14 @@ VideoPlayer:
   m_AspectRatio: 4
   m_DataSource: 1
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 1
+  m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: https://redirector.googlevideo.com:443/videoplayback?expire=1610497653&ei=Fer9X4XbHfzA5gTzzYTQCg&ip=138.186.49.68&id=o-AAczKhJP1tqdggyJbiVE0J89pnr9jklOezWF2CK0r6VX&itag=18&source=youtube&requiressl=yes&mh=cN&mm=31,29&mn=sn-bg0eznll,sn-pmcg-bg0d&ms=au,rdu&mv=m&mvi=2&pl=24&gcr=br&initcwndbps=1722500&vprv=1&mime=video/mp4&ns=AXx0utcBCZ9nx2VWJdfdQsUF&gir=yes&clen=19655696&ratebypass=yes&dur=335.342&lmt=1579031268695857&mt=1610475874&fvip=9&c=WEB&txp=5531432&n=3DqQq9uUSRUZ2L&sparams=expire,ei,ip,id,itag,source,requiressl,gcr,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&lsparams=mh,mm,mn,ms,mv,mvi,pl,initcwndbps&lsig=AG3C_xAwRQIgdM89EPC5roK9AcShCAO4sQedtgF9RjDnt3TQrhGKNtECIQC8qFLssfNZlNG1A2cOiG6o4_DVGx-Bo0ldkxhk5-P-9g==&sig=AOq0QJ8wRQIgVsETao3WCes7pG5_yLhvb_YpNwQ0y7KMHJ0poTwNT-QCIQCvG2U9vEFcrN9kUcJIGWJOeR1PCfy4LbMaGEpZBT9N3w==
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
@@ -421,7 +518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7418089f4181645b5df8f90e317bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://youtu.be/gjo8KNQ_2zs
+  youtubeUrl: https://www.youtube.com/watch?v=gjo8KNQ_2zs
   videoQuality: 0
   autoPlayOnStart: 1
   startFromSecond: 0
@@ -457,14 +554,14 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   loadingContent: {fileID: 2010599005}
   videoPlayer: {fileID: 3964452}
-  audioPlayer: {fileID: 0}
+  audioPlayer: {fileID: 3416920128116866244}
   debug: 0
   ignoreTimeout: 0
   _skipOnDrop: 1
   videoUrl: 
   audioUrl: 
   ForceGetWebServer: 0
-  showPlayerControls: 1
+  showPlayerControls: 0
   pauseCalled: 0
   autoHideControlsTime: 3
   mainControllerUi: {fileID: 0}
@@ -5390,7 +5487,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f6bfa60edcfdf2c4dbc73c8d1bfd0bb9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6bfa60edcfdf2c4dbc73c8d1bfd0bb9,
         type: 3}
@@ -6235,7 +6332,7 @@ Transform:
   - {fileID: 472773660}
   - {fileID: 1261764448}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: -88.456, z: 0}
 --- !u!1 &102513197
 GameObject:
@@ -6431,7 +6528,7 @@ RectTransform:
   m_Children:
   - {fileID: 984268066}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11305,7 +11402,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &166159898
 MonoBehaviour:
@@ -20600,7 +20697,7 @@ Transform:
   - {fileID: 529012993}
   - {fileID: 870197022}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: -90.105, z: 0}
 --- !u!1 &338944630 stripped
 GameObject:
@@ -21559,7 +21656,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 11.787001, y: -5.788, z: 11.486001}
 --- !u!114 &357560585
 MonoBehaviour:
@@ -23640,7 +23737,7 @@ PrefabInstance:
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
@@ -28100,6 +28197,7 @@ Transform:
   m_LocalScale: {x: 1.6498836, y: 1.154222, z: 0.96276}
   m_Children:
   - {fileID: 465496437}
+  - {fileID: 3164483332982438406}
   m_Father: {fileID: 543450652783418482}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90.00101, z: 0}
@@ -29982,7 +30080,7 @@ PrefabInstance:
     - target: {fileID: 3896195940839516126, guid: 961876ab4ec94c84baac1a28df92c857,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3896195940839516126, guid: 961876ab4ec94c84baac1a28df92c857,
         type: 3}
@@ -30960,7 +31058,6 @@ GameObject:
   - component: {fileID: 512962928}
   - component: {fileID: 512962927}
   - component: {fileID: 512962926}
-  - component: {fileID: 512962930}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -31041,20 +31138,8 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
---- !u!114 &512962930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512962925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &513191509
 GameObject:
   m_ObjectHideFlags: 0
@@ -42527,7 +42612,7 @@ Transform:
   - {fileID: 1777107476}
   - {fileID: 274262704}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &706238497
 MonoBehaviour:
@@ -42596,14 +42681,14 @@ VideoPlayer:
   m_AspectRatio: 4
   m_DataSource: 1
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 1
+  m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: https://redirector.googlevideo.com:443/videoplayback?expire=1610497653&ei=Fer9X4XbHfzA5gTzzYTQCg&ip=138.186.49.68&id=o-AAczKhJP1tqdggyJbiVE0J89pnr9jklOezWF2CK0r6VX&itag=18&source=youtube&requiressl=yes&mh=cN&mm=31,29&mn=sn-bg0eznll,sn-pmcg-bg0d&ms=au,rdu&mv=m&mvi=2&pl=24&gcr=br&initcwndbps=1722500&vprv=1&mime=video/mp4&ns=AXx0utcBCZ9nx2VWJdfdQsUF&gir=yes&clen=19655696&ratebypass=yes&dur=335.342&lmt=1579031268695857&mt=1610475874&fvip=9&c=WEB&txp=5531432&n=3DqQq9uUSRUZ2L&sparams=expire,ei,ip,id,itag,source,requiressl,gcr,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&lsparams=mh,mm,mn,ms,mv,mvi,pl,initcwndbps&lsig=AG3C_xAwRQIgdM89EPC5roK9AcShCAO4sQedtgF9RjDnt3TQrhGKNtECIQC8qFLssfNZlNG1A2cOiG6o4_DVGx-Bo0ldkxhk5-P-9g==&sig=AOq0QJ8wRQIgVsETao3WCes7pG5_yLhvb_YpNwQ0y7KMHJ0poTwNT-QCIQCvG2U9vEFcrN9kUcJIGWJOeR1PCfy4LbMaGEpZBT9N3w==
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
@@ -42622,7 +42707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7418089f4181645b5df8f90e317bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://youtu.be/UmXoIXTubn4
+  youtubeUrl: https://www.youtube.com/watch?v=UmXoIXTubn4
   videoQuality: 0
   autoPlayOnStart: 1
   startFromSecond: 0
@@ -42658,14 +42743,14 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   loadingContent: {fileID: 897843416}
   videoPlayer: {fileID: 706603700}
-  audioPlayer: {fileID: 0}
+  audioPlayer: {fileID: 3416920128116866244}
   debug: 0
   ignoreTimeout: 0
   _skipOnDrop: 1
   videoUrl: 
   audioUrl: 
   ForceGetWebServer: 0
-  showPlayerControls: 1
+  showPlayerControls: 0
   pauseCalled: 0
   autoHideControlsTime: 3
   mainControllerUi: {fileID: 0}
@@ -47170,7 +47255,7 @@ PrefabInstance:
     - target: {fileID: 3896195940839516126, guid: 961876ab4ec94c84baac1a28df92c857,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3896195940839516126, guid: 961876ab4ec94c84baac1a28df92c857,
         type: 3}
@@ -65268,7 +65353,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1079802915}
-  - component: {fileID: 1079802916}
   m_Layer: 5
   m_Name: CV Display
   m_TagString: Untagged
@@ -65298,18 +65382,6 @@ RectTransform:
   m_AnchoredPosition: {x: -9605.867, y: -0.00021862984}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1079802916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079802914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1080508878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 687277766152851660, guid: 7ab348e9025375546a622eca087906e2,
@@ -68048,7 +68120,7 @@ Transform:
   - {fileID: 1458470030}
   - {fileID: 348035118}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!1 &1115897113
 GameObject:
@@ -69793,7 +69865,7 @@ Transform:
   - {fileID: 1680581793}
   - {fileID: 325922711}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1133523966
 GameObject:
@@ -74594,7 +74666,7 @@ Transform:
   - {fileID: 745626281}
   - {fileID: 877639953}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1216540365
 GameObject:
@@ -76781,14 +76853,14 @@ VideoPlayer:
   m_AspectRatio: 4
   m_DataSource: 1
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 1
+  m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: https://redirector.googlevideo.com:443/videoplayback?expire=1610497653&ei=Fer9X4XbHfzA5gTzzYTQCg&ip=138.186.49.68&id=o-AAczKhJP1tqdggyJbiVE0J89pnr9jklOezWF2CK0r6VX&itag=18&source=youtube&requiressl=yes&mh=cN&mm=31,29&mn=sn-bg0eznll,sn-pmcg-bg0d&ms=au,rdu&mv=m&mvi=2&pl=24&gcr=br&initcwndbps=1722500&vprv=1&mime=video/mp4&ns=AXx0utcBCZ9nx2VWJdfdQsUF&gir=yes&clen=19655696&ratebypass=yes&dur=335.342&lmt=1579031268695857&mt=1610475874&fvip=9&c=WEB&txp=5531432&n=3DqQq9uUSRUZ2L&sparams=expire,ei,ip,id,itag,source,requiressl,gcr,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&lsparams=mh,mm,mn,ms,mv,mvi,pl,initcwndbps&lsig=AG3C_xAwRQIgdM89EPC5roK9AcShCAO4sQedtgF9RjDnt3TQrhGKNtECIQC8qFLssfNZlNG1A2cOiG6o4_DVGx-Bo0ldkxhk5-P-9g==&sig=AOq0QJ8wRQIgVsETao3WCes7pG5_yLhvb_YpNwQ0y7KMHJ0poTwNT-QCIQCvG2U9vEFcrN9kUcJIGWJOeR1PCfy4LbMaGEpZBT9N3w==
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
@@ -76807,7 +76879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7418089f4181645b5df8f90e317bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://youtu.be/1zAiSuY0CIU
+  youtubeUrl: https://www.youtube.com/watch?v=1zAiSuY0CIU
   videoQuality: 0
   autoPlayOnStart: 1
   startFromSecond: 0
@@ -76843,14 +76915,14 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   loadingContent: {fileID: 885453907}
   videoPlayer: {fileID: 1258888359}
-  audioPlayer: {fileID: 0}
+  audioPlayer: {fileID: 3416920128116866244}
   debug: 0
   ignoreTimeout: 0
   _skipOnDrop: 1
   videoUrl: 
   audioUrl: 
   ForceGetWebServer: 0
-  showPlayerControls: 1
+  showPlayerControls: 0
   pauseCalled: 0
   autoHideControlsTime: 3
   mainControllerUi: {fileID: 0}
@@ -82219,7 +82291,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 50.000004, y: -120.00001, z: 0}
 --- !u!114 &1352956407
 MonoBehaviour:
@@ -83810,7 +83882,7 @@ Transform:
   m_LocalScale: {x: 4.3275495, y: 1, z: 8.40063}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!114 &1383920440
 MonoBehaviour:
@@ -86849,7 +86921,7 @@ Transform:
   - {fileID: 1638268847}
   - {fileID: 2067348161}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: -90.878006, z: 0}
 --- !u!1 &1440139514
 GameObject:
@@ -93388,7 +93460,7 @@ RectTransform:
   - {fileID: 1384225447}
   - {fileID: 112181348}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -96807,7 +96879,7 @@ Transform:
   - {fileID: 367529094}
   - {fileID: 1278739925}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1589787857 stripped
 GameObject:
@@ -115489,14 +115561,14 @@ VideoPlayer:
   m_AspectRatio: 4
   m_DataSource: 1
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 1
+  m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: https://redirector.googlevideo.com:443/videoplayback?expire=1610497653&ei=Fer9X4XbHfzA5gTzzYTQCg&ip=138.186.49.68&id=o-AAczKhJP1tqdggyJbiVE0J89pnr9jklOezWF2CK0r6VX&itag=18&source=youtube&requiressl=yes&mh=cN&mm=31,29&mn=sn-bg0eznll,sn-pmcg-bg0d&ms=au,rdu&mv=m&mvi=2&pl=24&gcr=br&initcwndbps=1722500&vprv=1&mime=video/mp4&ns=AXx0utcBCZ9nx2VWJdfdQsUF&gir=yes&clen=19655696&ratebypass=yes&dur=335.342&lmt=1579031268695857&mt=1610475874&fvip=9&c=WEB&txp=5531432&n=3DqQq9uUSRUZ2L&sparams=expire,ei,ip,id,itag,source,requiressl,gcr,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&lsparams=mh,mm,mn,ms,mv,mvi,pl,initcwndbps&lsig=AG3C_xAwRQIgdM89EPC5roK9AcShCAO4sQedtgF9RjDnt3TQrhGKNtECIQC8qFLssfNZlNG1A2cOiG6o4_DVGx-Bo0ldkxhk5-P-9g==&sig=AOq0QJ8wRQIgVsETao3WCes7pG5_yLhvb_YpNwQ0y7KMHJ0poTwNT-QCIQCvG2U9vEFcrN9kUcJIGWJOeR1PCfy4LbMaGEpZBT9N3w==
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
@@ -115515,7 +115587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7418089f4181645b5df8f90e317bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://youtu.be/OGaN-d4ZHNE
+  youtubeUrl: https://www.youtube.com/watch?v=OGaN-d4ZHNE
   videoQuality: 0
   autoPlayOnStart: 1
   startFromSecond: 0
@@ -115551,14 +115623,14 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   loadingContent: {fileID: 538065983}
   videoPlayer: {fileID: 1933273684}
-  audioPlayer: {fileID: 0}
+  audioPlayer: {fileID: 3416920128116866244}
   debug: 0
   ignoreTimeout: 0
   _skipOnDrop: 1
   videoUrl: 
   audioUrl: 
   ForceGetWebServer: 0
-  showPlayerControls: 1
+  showPlayerControls: 0
   pauseCalled: 0
   autoHideControlsTime: 3
   mainControllerUi: {fileID: 0}
@@ -115939,14 +116011,14 @@ VideoPlayer:
   m_AspectRatio: 4
   m_DataSource: 1
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 1
+  m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: https://redirector.googlevideo.com:443/videoplayback?expire=1610497653&ei=Fer9X4XbHfzA5gTzzYTQCg&ip=138.186.49.68&id=o-AAczKhJP1tqdggyJbiVE0J89pnr9jklOezWF2CK0r6VX&itag=18&source=youtube&requiressl=yes&mh=cN&mm=31,29&mn=sn-bg0eznll,sn-pmcg-bg0d&ms=au,rdu&mv=m&mvi=2&pl=24&gcr=br&initcwndbps=1722500&vprv=1&mime=video/mp4&ns=AXx0utcBCZ9nx2VWJdfdQsUF&gir=yes&clen=19655696&ratebypass=yes&dur=335.342&lmt=1579031268695857&mt=1610475874&fvip=9&c=WEB&txp=5531432&n=3DqQq9uUSRUZ2L&sparams=expire,ei,ip,id,itag,source,requiressl,gcr,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&lsparams=mh,mm,mn,ms,mv,mvi,pl,initcwndbps&lsig=AG3C_xAwRQIgdM89EPC5roK9AcShCAO4sQedtgF9RjDnt3TQrhGKNtECIQC8qFLssfNZlNG1A2cOiG6o4_DVGx-Bo0ldkxhk5-P-9g==&sig=AOq0QJ8wRQIgVsETao3WCes7pG5_yLhvb_YpNwQ0y7KMHJ0poTwNT-QCIQCvG2U9vEFcrN9kUcJIGWJOeR1PCfy4LbMaGEpZBT9N3w==
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
@@ -115965,7 +116037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7418089f4181645b5df8f90e317bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://youtu.be/1zAiSuY0CIU
+  youtubeUrl: https://www.youtube.com/watch?v=1zAiSuY0CIU
   videoQuality: 0
   autoPlayOnStart: 1
   startFromSecond: 0
@@ -116001,14 +116073,14 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   loadingContent: {fileID: 1920796271}
   videoPlayer: {fileID: 1938873824}
-  audioPlayer: {fileID: 0}
+  audioPlayer: {fileID: 3416920128116866244}
   debug: 0
   ignoreTimeout: 0
   _skipOnDrop: 1
   videoUrl: 
   audioUrl: 
   ForceGetWebServer: 0
-  showPlayerControls: 1
+  showPlayerControls: 0
   pauseCalled: 0
   autoHideControlsTime: 3
   mainControllerUi: {fileID: 0}
@@ -117028,7 +117100,7 @@ PrefabInstance:
     - target: {fileID: 198831079419857526, guid: 7ab348e9025375546a622eca087906e2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 198831079419857526, guid: 7ab348e9025375546a622eca087906e2,
         type: 3}
@@ -120585,7 +120657,7 @@ Transform:
   - {fileID: 247125875}
   - {fileID: 717064729}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2041333281
 GameObject:
@@ -121402,7 +121474,7 @@ Transform:
   - {fileID: 3964450}
   - {fileID: 1933273682}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!1 &2052725898
 GameObject:
@@ -121740,7 +121812,7 @@ Transform:
   - {fileID: 469146150}
   - {fileID: 690496692}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2061084306
 GameObject:
@@ -122923,7 +122995,7 @@ Transform:
   - {fileID: 75869974}
   - {fileID: 629240725}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2078366272
 GameObject:
@@ -125194,7 +125266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4648910731655336, guid: b901940dd073fde4c8b54624e4175137, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4648910731655336, guid: b901940dd073fde4c8b54624e4175137, type: 3}
       propertyPath: m_LocalPosition.x
@@ -125269,7 +125341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4073890264965778, guid: 3e8f76ec9e8ff644bbc6883bdf7c428c, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4073890264965778, guid: 3e8f76ec9e8ff644bbc6883bdf7c428c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -125372,7 +125444,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2121041577
 MonoBehaviour:
@@ -126557,7 +126629,7 @@ Transform:
   - {fileID: 165526477}
   - {fileID: 849147281}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &543450651741285184
 Transform:
@@ -126598,7 +126670,7 @@ Transform:
   - {fileID: 807313536}
   - {fileID: 124477306}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &543450652627697394
 Transform:
@@ -126640,7 +126712,7 @@ Transform:
   - {fileID: 179752555}
   - {fileID: 1938873826}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -90.011, z: 0}
 --- !u!4 &543450652783418482
 Transform:
@@ -126679,7 +126751,7 @@ Transform:
   - {fileID: 249731046}
   - {fileID: 1258888357}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -90.011, z: 0}
 --- !u!23 &649251791542640434
 MeshRenderer:
@@ -128436,7 +128508,7 @@ RectTransform:
   - {fileID: 2953055463206686936}
   - {fileID: 3164534554840353698}
   m_Father: {fileID: 3164483332982438406}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -130380,12 +130452,12 @@ GameObject:
   - component: {fileID: 3167333968807998280}
   - component: {fileID: 3416920128116866244}
   m_Layer: 0
-  m_Name: AudioPlayer
+  m_Name: AudioPlayer - selingan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &3161782165629036552
 GameObject:
   m_ObjectHideFlags: 0
@@ -130566,7 +130638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3162430360274787328
 GameObject:
   m_ObjectHideFlags: 0
@@ -130801,7 +130873,7 @@ Transform:
   m_LocalScale: {x: 0.030770058, y: 0.00000031081726, z: 0.41343752}
   m_Children: []
   m_Father: {fileID: 3164483332982438406}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!64 &3162961487562767197
 MeshCollider:
@@ -130904,7 +130976,6 @@ Transform:
   m_LocalScale: {x: 0.50371736, y: 3.2925086, z: 0.24659185}
   m_Children:
   - {fileID: 3167292719814683918}
-  - {fileID: 3167333968807998280}
   - {fileID: 2952690969107482456}
   - {fileID: 3162961487562767196}
   m_Father: {fileID: 464896697}
@@ -130945,12 +131016,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3161760587894800414}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.5002428, y: -0.49975705, z: 0.49975687, w: -0.50024307}
+  m_LocalPosition: {x: 6.2708206, y: 9.422274, z: -4.2279196}
+  m_LocalScale: {x: 0.48495936, y: 5.4322557, z: 0.28462183}
   m_Children: []
-  m_Father: {fileID: 3164483332982438406}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &3251961985063607389
 MeshRenderer:
@@ -131115,7 +131186,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3161760587894800414}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -131128,14 +131199,14 @@ VideoPlayer:
   m_AspectRatio: 2
   m_DataSource: 1
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 0
+  m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 3080823413374877992}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: 
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
