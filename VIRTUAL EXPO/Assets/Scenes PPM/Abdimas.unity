@@ -1480,7 +1480,7 @@ Transform:
   - {fileID: 584002205}
   - {fileID: 534526609}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &22050712
 GameObject:
@@ -8176,6 +8176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 117172157}
   - component: {fileID: 117172156}
+  - component: {fileID: 117172158}
   m_Layer: 0
   m_Name: MusicControl
   m_TagString: GameMusic
@@ -8196,7 +8197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 75645713}
-  ObjectMusic: {fileID: 0}
+  ObjectMusic: {fileID: 117172155}
 --- !u!4 &117172157
 Transform:
   m_ObjectHideFlags: 0
@@ -8209,8 +8210,104 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &117172158
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117172155}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &118416265
 GameObject:
   m_ObjectHideFlags: 0
@@ -9735,7 +9832,7 @@ Transform:
   - {fileID: 960594400}
   - {fileID: 428404201}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &143813448
 GameObject:
@@ -10560,7 +10657,7 @@ RectTransform:
   - {fileID: 785022591}
   - {fileID: 1576005942}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10948,7 +11045,7 @@ Transform:
   m_LocalScale: {x: 0.6796836, y: 0.6796836, z: 0.6796836}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -269.999, z: 0}
 --- !u!114 &176127430
 MonoBehaviour:
@@ -23754,7 +23851,7 @@ Transform:
   - {fileID: 1618912089}
   - {fileID: 1776681382}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &421852132
 MonoBehaviour:
@@ -26300,7 +26397,7 @@ Transform:
   - {fileID: 534391005}
   - {fileID: 2084498077}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!1 &460100507
 GameObject:
@@ -26663,7 +26760,7 @@ Transform:
   - {fileID: 220931701}
   - {fileID: 841855703}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &490636735
 PrefabInstance:
@@ -28843,7 +28940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7418089f4181645b5df8f90e317bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://www.youtube.com/watch?v=4j6cRLYprZ0&feature=youtu.be&ab_channel=PenelitianPublikasi
+  youtubeUrl: https://www.youtube.com/watch?v=4j6cRLYprZ0
   videoQuality: 0
   autoPlayOnStart: 1
   startFromSecond: 0
@@ -28879,7 +28976,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   loadingContent: {fileID: 1263872227}
   videoPlayer: {fileID: 525839284}
-  audioPlayer: {fileID: 0}
+  audioPlayer: {fileID: 2132388532}
   debug: 0
   ignoreTimeout: 0
   _skipOnDrop: 1
@@ -28921,7 +29018,7 @@ Transform:
   - {fileID: 1484632932}
   - {fileID: 1006626847}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: -89.954}
 --- !u!1 &526729679
 GameObject:
@@ -31460,7 +31557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7418089f4181645b5df8f90e317bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://www.youtube.com/watch?v=j8GQQVeT-Vk&ab_channel=PenelitianPublikasi
+  youtubeUrl: https://www.youtube.com/watch?v=j8GQQVeT-Vk
   videoQuality: 0
   autoPlayOnStart: 1
   startFromSecond: 0
@@ -31496,7 +31593,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   loadingContent: {fileID: 508251930}
   videoPlayer: {fileID: 578704005}
-  audioPlayer: {fileID: 0}
+  audioPlayer: {fileID: 2132388532}
   debug: 0
   ignoreTimeout: 0
   _skipOnDrop: 1
@@ -31538,7 +31635,7 @@ Transform:
   - {fileID: 1386321072}
   - {fileID: 730652691}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 0.045}
 --- !u!1 &579063055
 GameObject:
@@ -34225,7 +34322,7 @@ Transform:
   - {fileID: 1549814636}
   - {fileID: 881493963}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &631532313
 GameObject:
@@ -34262,7 +34359,7 @@ Transform:
   - {fileID: 1632148202}
   - {fileID: 2022375649}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &631829343
 GameObject:
@@ -37048,7 +37145,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 258345123c833c24299f31a8e1a9c1c3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 258345123c833c24299f31a8e1a9c1c3,
         type: 3}
@@ -38082,7 +38179,7 @@ RectTransform:
   m_Children:
   - {fileID: 75645714}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -40818,7 +40915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7418089f4181645b5df8f90e317bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://www.youtube.com/watch?v=dWM387IA62Q&feature=youtu.be&ab_channel=PenelitianPublikasi
+  youtubeUrl: https://www.youtube.com/watch?v=dWM387IA62Q
   videoQuality: 0
   autoPlayOnStart: 1
   startFromSecond: 0
@@ -40854,7 +40951,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   loadingContent: {fileID: 464481389}
   videoPlayer: {fileID: 756890663}
-  audioPlayer: {fileID: 0}
+  audioPlayer: {fileID: 2132388532}
   debug: 0
   ignoreTimeout: 0
   _skipOnDrop: 1
@@ -40896,7 +40993,7 @@ Transform:
   - {fileID: 673662750}
   - {fileID: 788159688}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 90.045006}
 --- !u!1 &761011060
 GameObject:
@@ -42508,7 +42605,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 258345123c833c24299f31a8e1a9c1c3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 258345123c833c24299f31a8e1a9c1c3,
         type: 3}
@@ -43076,7 +43173,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 258345123c833c24299f31a8e1a9c1c3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 258345123c833c24299f31a8e1a9c1c3,
         type: 3}
@@ -46942,7 +47039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4073890264965778, guid: 3e8f76ec9e8ff644bbc6883bdf7c428c, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4073890264965778, guid: 3e8f76ec9e8ff644bbc6883bdf7c428c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49776,7 +49873,7 @@ Transform:
   - {fileID: 17830807}
   - {fileID: 550701570}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &901390726
 PrefabInstance:
@@ -65272,7 +65369,7 @@ Transform:
   m_LocalScale: {x: 3.010537, y: 2.372012, z: 5.7097754}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -269.999, z: 0}
 --- !u!1 &1191972677
 GameObject:
@@ -66683,7 +66780,7 @@ PrefabInstance:
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6506270405444041909, guid: 479e05de9d58af54ca1c2ba414656501,
         type: 3}
@@ -79486,7 +79583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4648910731655336, guid: b901940dd073fde4c8b54624e4175137, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4648910731655336, guid: b901940dd073fde4c8b54624e4175137, type: 3}
       propertyPath: m_LocalPosition.x
@@ -79950,7 +80047,7 @@ Transform:
   - {fileID: 1022663385}
   - {fileID: 1001682589}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -269.999, z: 0}
 --- !u!1 &1444531581
 GameObject:
@@ -80044,7 +80141,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -269.999, z: 0}
 --- !u!1 &1445127862
 GameObject:
@@ -81246,7 +81343,7 @@ Transform:
   - {fileID: 591777904}
   - {fileID: 1503464266}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1470171615
 GameObject:
@@ -86055,7 +86152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4073890264965778, guid: 3e8f76ec9e8ff644bbc6883bdf7c428c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4073890264965778, guid: 3e8f76ec9e8ff644bbc6883bdf7c428c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -93287,7 +93384,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e9bc56a54a16a354387eafffd36d07d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e9bc56a54a16a354387eafffd36d07d8,
         type: 3}
@@ -94915,7 +95012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7418089f4181645b5df8f90e317bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://www.youtube.com/watch?v=pMvqGmFRAAw&feature=youtu.be&ab_channel=PenelitianPublikasi
+  youtubeUrl: https://www.youtube.com/watch?v=pMvqGmFRAAw
   videoQuality: 0
   autoPlayOnStart: 1
   startFromSecond: 0
@@ -94951,7 +95048,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   loadingContent: {fileID: 1308572847}
   videoPlayer: {fileID: 1742117373}
-  audioPlayer: {fileID: 0}
+  audioPlayer: {fileID: 2132388532}
   debug: 0
   ignoreTimeout: 0
   _skipOnDrop: 1
@@ -94993,7 +95090,7 @@ Transform:
   - {fileID: 1823753247}
   - {fileID: 715921722}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 180.045}
 --- !u!1001 &1743736079
 PrefabInstance:
@@ -108642,7 +108739,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ce4535b7548b2604bb624c75f987970a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce4535b7548b2604bb624c75f987970a,
         type: 3}
@@ -112276,7 +112373,7 @@ Transform:
   - {fileID: 1867939825}
   - {fileID: 568511299}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2030958537
 GameObject:
@@ -117729,6 +117826,71 @@ Transform:
   m_Father: {fileID: 544058768}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2132388531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2132388533}
+  - component: {fileID: 2132388532}
+  m_Layer: 0
+  m_Name: AudioPlayer - selingan (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!328 &2132388532
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132388531}
+  m_Enabled: 0
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 4
+  m_AspectRatio: 2
+  m_DataSource: 1
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 0
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 01
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 0
+  m_FrameReadyEventEnabled: 0
+--- !u!4 &2132388533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132388531}
+  m_LocalRotation: {x: -0.5002428, y: -0.49975705, z: 0.49975687, w: -0.50024307}
+  m_LocalPosition: {x: 6.2708206, y: 9.422274, z: -4.2279196}
+  m_LocalScale: {x: 0.48495936, y: 5.4322557, z: 0.28462183}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137348432
 GameObject:
   m_ObjectHideFlags: 0
@@ -118103,7 +118265,7 @@ Transform:
   - {fileID: 275348587}
   - {fileID: 543280941}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -270.01, z: 0}
 --- !u!4 &543450652688464340
 Transform:
@@ -118137,7 +118299,7 @@ Transform:
   - {fileID: 1671301402}
   - {fileID: 1686308682}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -180.01, z: 0}
 --- !u!4 &543450652958844764
 Transform:
@@ -118170,7 +118332,7 @@ Transform:
   - {fileID: 188427605}
   - {fileID: 1859151192}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -450.012, z: 0}
 --- !u!4 &543450653298558367
 Transform:
@@ -118202,7 +118364,7 @@ Transform:
   - {fileID: 144176980}
   - {fileID: 883293897}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -360.009, z: 0}
 --- !u!23 &649251791711533716
 MeshRenderer:
