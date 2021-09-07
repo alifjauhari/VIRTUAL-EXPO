@@ -1,0 +1,345 @@
+body{
+	margin:0px;
+	padding:0px;
+	position: absolute; 
+	height:100%;
+	width:100%;
+	background-size:cover;
+	font-style: regular;
+	font-family:"Myriad Pro", Myriad,"Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color:#f0f0f1;
+}
+
+#loadingBlock,#errorBrowserBlock{
+	padding:0px;
+	position:absolute;
+	height:100vh;
+	width:100vw;
+	background-color:#f0f0f1;
+}
+
+#gameContainer,canvas{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+	height:100%;
+	width:100%;
+	background-color:#f0f0f1;
+}
+
+#fullScreenButton{
+	height:30px;
+	width:30px;
+	position:absolute;
+	z-index:1;
+	bottom:5px;
+	right:5px;
+	background-color:transparent;
+	background-image:url("../img/fullScreen_on.png");
+	background-size:30px 30px;
+	border:none;
+	cursor: pointer;
+}
+
+.subtitle{
+	color:#1896a7;
+	font-size:2.5vh;
+	padding-bottom:3vh;
+	padding-top: 3vh;
+	display: block;
+	height:15vh;
+	width:40vw;
+	margin:auto;
+	text-align: center;
+}
+
+.logo{
+	height:25vh;
+	width:auto;
+	display: block;
+	margin:auto;
+	margin-top:2vh;
+}
+
+#loadingBlock,#errorBrowserBlock{
+	background-image:url("../img/background.png");
+	background-size:cover;
+}
+
+#emptyBar{
+	background: url("../img/progressEmpty.png") no-repeat right;
+	float: right; 
+	width: 60%; 
+	height: 100%; 
+	display: inline-block;
+}
+
+#fullBar{
+	background: url("../img/progressFull.png") no-repeat right;
+	float: left; 
+	width: 40%; 
+	height: 100%; 
+	display: inline-block;
+}
+
+#progressBar,#warningBrowserBlock,#warningMobileBlock,#errorContent{
+	height:25vh;
+	width:40vw;
+	margin:auto;
+	text-align: center;
+}
+
+#progressBar{
+	height:8vh;
+	color:#666666;
+	font-size:4vh;
+}
+
+#warningBrowserBlock,#warningMobileBlock,#errorContent{
+	margin-top:15vh;
+	color:#666666;
+	font-size:2.3vh;
+}
+
+.browserIcons{
+	display: inline-flex;
+	margin-top:2vh;
+}
+
+.browserIcons a{
+	width:150px;
+}
+
+#errorContent{
+	font-size:3vh;
+	margin-top:5vh;
+}
+
+.centered{
+	height: 100%;
+	max-width:770px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.menu-btn{
+    position:absolute;
+    /* background: grey; */
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: 10px;
+    left:10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid rgb(0, 0, 0); */
+}
+.menu-btn_burger {
+    z-index: 2;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before, 
+.menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    z-index: 2;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before {
+    transform: translateY(-5px);
+}
+.menu-btn_burger::after {
+    transform: translateY(5px);
+}
+
+.size-canvas {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.size-btn {
+    position: relative;
+    transform: translateX(50px);
+    bottom: 15px;
+    left: 10px;
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+.size-btn_option{
+    background-color: #d71d1d;
+    border: #d71d1d;
+    color: rgb(223, 223, 223);
+    z-index: 2;
+}
+
+.size-btn_option:hover{
+    background-color: #661313;
+    border: #661313;
+    color: rgb(223, 223, 223);
+}
+.menu-bg{
+    position: absolute;
+    z-index: 1;
+    transform: translateX(50px);
+    transform: translateY(50px);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, #d71d1d, #ee2a2a);
+    transition: .3s ease;
+}
+
+
+/* ANIMATION */
+.menu-btn.open .menu-btn_burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+.menu-btn.open .menu-btn_burger::before {
+    background: rgb(223, 223, 223);
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn_burger::after {
+    background: rgb(223, 223, 223);
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+.size-btn.open{
+    display: block;
+    transform: translateX(50px);
+    z-index: 2;
+}
+.menu-bg.open{
+    width: 700px;
+    height: 250px;
+}
+
+
+/* When aspect-ratio is smaller than 4/3*/
+
+/*@media (max-aspect-ratio: 4/3){
+	
+	.webgl-content{
+		-webkit-transform: translate(0%, 0%); transform: translate(0%, 0%);
+		-webkit-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.15);
+		box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.15);
+	}
+	
+	.keepRatio{
+		width:100%;
+		padding-top: 75%;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.webgl-content,#loadingBlock,#errorBrowserBlock{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	.logo{
+		width:25vw;
+		height:auto;
+		margin-top:1vh;
+	}
+	
+	.subtitle{
+		font-size:2vw;
+		height:10vw;
+		padding-bottom:1vw;
+		padding-top: 1vw;
+	}
+
+	.subtitle,#progressBar,#warningBrowserBlock,#warningMobileBlock,#errorContent{
+		width:80vw;
+	}
+	
+	#progressBar{
+		height:6vw;
+		margin-top: 2vw;
+		font-size:3vw;
+	}
+	
+	#emptyBar,#fullBar{
+		height: 2vw; 
+	}
+	
+	#warningBrowserBlock,#warningMobileBlock,#errorContent{
+		margin-top:3vw;
+		font-size:2vw;
+	}
+	
+	.browserIcons{
+		margin-top:1vw;
+	}
+	
+	.browserIcons a{
+		width:15vw;
+	}
+	
+	.browserIcons a img{
+		width:8vw;
+	}
+	
+	.webgl-content,#loadingBlock,#errorBrowserBlock{
+		border:1px solid #c6c9ca;
+		width:calc(100% - 2px);
+		height:auto;
+	}
+}*/
+
+
+/* When aspect-ratio is bigger than 16/9*/
+
+/*@media (min-aspect-ratio: 16/9){
+	body{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+	}
+	
+	.keepRatio{
+		width:178vh;
+		height:100%;
+		margin:0 auto;
+	}
+	
+	.webgl-content,#gameContainer,canvas,#loadingBlock,#errorBrowserBlock{
+		width: inherit;
+	}
+	
+	.webgl-content{
+	-webkit-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.15);
+		box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.15);
+	}
+	
+	.subtitle,#progressBar,#warningBrowserBlock,#warningMobileBlock,#errorContent{
+		width:100vh;
+	}
+	
+	.webgl-content,#loadingBlock,#errorBrowserBlock{
+		border:1px solid #c6c9ca;
+		height:calc(100% - 2px);
+	}
+}*/
