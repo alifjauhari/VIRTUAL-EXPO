@@ -228,9 +228,9 @@ public class YoutubeSettings : MonoBehaviour
     protected static string jsUrl;
 
     /*PRIVATE INFO DO NOT CHANGE THESE URLS OR VALUES, ONLY IF YOU WANT HOST YOUR OWN SERVER| TURORIALS IN THE PROJECT FILES*/
-    protected const string serverURI = "https://lightshaftstream.herokuapp.com/api/info?url=";
+    private const string serverURI = "https://viraexpoir.herokuapp.com/api/info?url=";
     protected const string formatURI = "&format=best&flatten=true";
-    protected const string VIDEOURIFORWEBGLPLAYER = "https://cubestudio.id/VR/Test/webglplayersystem/download.php?mime=video/mp4&title=generatedvideo&token=";
+    protected const string VIDEOURIFORWEBGLPLAYER = "https://api.cubestudio.id/webgl-player-system/download.php?mime=video/mp4&title=generatedvideo&token=";
     /*END OF PRIVATE INFO*/
 
     #endregion
@@ -457,7 +457,7 @@ public class YoutubeSettings : MonoBehaviour
 
     IEnumerator DownloadThumbnail(string videoId)
     {
-        UnityWebRequest request = UnityWebRequestTexture.GetTexture("https://img.youtube.com/vi/" + videoId + "/0.jpg");
+        UnityWebRequest request = UnityWebRequestTexture.GetTexture("https://api.cubestudio.id/thumbnail-yt.php?url=https://img.youtube.com/vi/" + videoId + "/0.jpg");
         //request.SetRequestHeader("User-Agent", USER_AGENT);
         yield return request.SendWebRequest();
         EnableThumbnailObject();
